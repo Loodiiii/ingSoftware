@@ -575,7 +575,7 @@ ul li{
     padding-top: 40px;
 }
 
-/* -- SIXTH SECTION STARTS HERE -- */
+/* -- SIXTH SECTION IN ANOTHER CSS FILE -- */
 
 .s6{
     height: auto;
@@ -603,8 +603,8 @@ ul li{
     margin-bottom: 15px;
 }
 
-.s6-down{
-    height: 500px;
+#testimonials{
+
 }
 
 /* TESTIMONIALS - Mobile */

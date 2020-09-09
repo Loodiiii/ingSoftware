@@ -144,4 +144,3 @@ container.addEventListener('touchmove', drag, false);
 container.addEventListener('mouseup', move, false);
 container.addEventListener('touchend', move, false);
 
-
