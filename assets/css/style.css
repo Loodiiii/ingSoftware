@@ -73,7 +73,6 @@ header{
     justify-content: space-between;
     flex-direction: column;
     cursor: pointer;
-    z-index: 100000;
 }
 
 .hamburger hr{

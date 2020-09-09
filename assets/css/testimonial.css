@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 400;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.s6-p{
+    font-size: 1rem;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.s6-h1{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 15px;
+}
