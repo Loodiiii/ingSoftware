@@ -1,27 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
+.s6{
+    height: auto;
+}
+
+.s6-container{
+    background-color: #f9fafb;
+    padding: 20px;
+}
+
+.container-concept {
+    background: url('../images/pattern1.png');
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.customer-1{
+    background: url('../images/customer-t2.jpg');
+}
+.customer-2{
+    background: url('../images/customer-t3.jpg');
+}
+.customer-3{
+    background: url('../images/customer-t4.jpg');
+}
+.customer-4{
+    background: url('../images/customer-t5.jpg');
+}
+.customer-5{
+    background: url('../images/customer-t6.jpg');
+}
+.customer-6{
+    background: url('../images/customer-t1.jpg');
+}
+
+.slika {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.splide {
+    transition: 1s;
+}
+
+.splide__slide {
+    box-sizing: border-box;
+    background-color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px;
+}
+
+.slide-down {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.splide__list {
+    padding-top: 110px;
+}
+
+.splide__slide p {
+    color: rgba(120, 120, 120, 1);
+    word-spacing: 1mm;
+    letter-spacing: .1mm;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.customer-text {
+    margin-top: 8px;
+    margin-left: 30px;
     box-sizing: border-box;
 }
 
-body{
-    font-weight: 400;
-    scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
+.customer-text h1 {
+    font-size: 24px;
+    color: rgb(77, 77, 77);
+    margin: 0;
 }
 
-.s6-p{
-    font-size: 1rem;
-    color: rgba(0,0,0,0.7);
-    text-align: center;
-    text-transform: uppercase;
-    margin: 15px 0;
+.customer-text h2 {
+    color: rgb(155, 155, 155);
+    margin: 0;
+    margin-top: 4px;
+    font-size: 20px;
 }
 
-.s6-h1{
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 15px;
+.splide__pagination{
+    top: 100%;
 }
+

@@ -62,6 +62,13 @@ header{
     padding-top: 90px;
 }
 
+.u-list li{
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
 .u-list a{
     text-decoration: none;
     color: white;
@@ -162,23 +169,6 @@ header{
 #cross-line-2{
     transform: rotate(-45deg);
     margin-top: -1px;
-}
-
-#Layer_2{
-    color: blue;
-    background-color: brown;
-}
-
-#Layer_1-2{
-    color: blue;
-    background-color: brown;
-}
-
-ul li{
-    margin-bottom: 35px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
 }
 
 #s1{
@@ -575,214 +565,8 @@ ul li{
     padding-top: 40px;
 }
 
-/* -- SIXTH SECTION IN ANOTHER CSS FILE -- */
+/* -- SIXTH SECTION IN ANOTHER CSS FILE, TESTIMONIAL.CSS -- */
 
-.s6{
-    height: auto;
-}
-
-.s6-container{
-    background-color: #f9fafb;
-    padding: 20px;
-    padding-top: 15px;
-}
-
-.s6-up p{
-    font-size: 1rem;
-    color: rgba(0,0,0,0.7);
-    text-align: center;
-    text-transform: uppercase;
-    margin: 15px 0;
-}
-
-.s6-up h1{
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 15px;
-}
-
-#testimonials{
-
-}
-
-/* TESTIMONIALS - Mobile */
-#testimonials{
-    background-color: #f9fafb;
-    background-position: center center;
-    background-size: cover;
-    padding: 45px 0;
-}
-#testimonials > h2{
-/* Change it on desktop */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    color: #000000;
-    text-align: center;
-    margin: 0 10px 45px 10px;
-}
-
-#testimonials .scroll-area{
-    padding: 0 25px;
-    overflow-x: hidden;
-}
-#testimonials .wrapper{
-    --n: 5;
-    width: calc(460vw - 200px);
-    height: 580px;
-    transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*(-100% + 60px)));
-}
-#testimonials .wrapper.smooth{
-transition: transform calc(var(--f, 1)*.5s) ease-out;
-}
-#testimonials .testimonial{
-background: #ffffff url('https://stage.mvpworkshop.co/wp-content/themes/MVPWorkshop/images/tokenization/testimonial-quotes.svg') no-repeat;
-background-position: top 25px left 0px;
-
-float: left;
-width: calc(100vw - 60px);
-height: 550px;
-padding: 111px 0px 0px 2px;
-margin: 0 calc(8px - 5vw);
-position: relative;
-transform: scale(0.9);
-transition: transform 0.5s ease-out, margin 0.5s ease-out;
-}
-
-#testimonials .testimonial.current{
-transform: scale(1);
-margin: 0 5px;
-width: 285px;
-}
-
-#testimonials .quote {
-padding: 5% 6% 5% 6%;
-}
-
-#testimonials p{
-font-family: 'Fira Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 131%;
-color: #000000;
-user-select: none;
-}
-
-#testimonials .person{
-position: absolute;
-bottom: 45px;
-left: 25px;
-width: 80%;
-}
-
-#testimonials .person-petars{
-bottom: 15px;
-left: 25px;
-}
-
-#testimonials img{
-float: left;
-width: 70px;
-height: auto;
-border-radius: 40px;
-}
-#testimonials .details{
-height: 70px;
-margin: 6px 0 0 90px;
-}
-#testimonials strong{
-font-family: 'Titillium Web', sans-serif;
-font-size: 20px;
-line-height: 24px;
-font-weight: 600;
-display: block;
-}
-#testimonials span{
-font-size: 17px;
-line-height: 24px;
-font-weight: normal;
-color: #A3A8AF;
-}
-
-@media screen and (max-width: 321px) {
-#testimonials {
-    height: 800px !important;
-}
-#testimonials .testimonial {
-height: 550px !important;
-    margin: 0 -13px;
-}
-#testimonials > h2 {
-    font-size: 32px;
-}
-}
-@media (min-width: 404px) and (max-width: 1024px) {
-#testimonials .testimonial {
-    margin: 0 0;
-}
-#testimonials .testimonial.current {
-    width: 14%;
-}
-}
-/* TESTIMONIALS - Desktop */
-@media screen and (min-width: 1024px) {
-#testimonials{
-    background: #EDEFF2 url('images/testimonials-bgr.png');
-    background-repeat: no-repeat;
-    background-position: top 0 right 0;
-    background-size: 100%;
-    padding: 42px 0 50px 0;
-    height: 750px;
-}
-#testimonials > h2{
-    font-size: 48px;
-    line-height: 56px;
-    margin-bottom: 80px !important;
-    margin-top: 38px !important;
-}
-#testimonials .scroll-area {
-    padding: 0 100px;
-    height: 571px;
-    overflow-y: hidden;
-}
-
-#testimonials .wrapper{
-    width: 4000px;
-    height: 570px;
-    margin-left: calc(50vw - 500px);
-    transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*(-100%)));
-}
-#testimonials .testimonial,
-#testimonials .testimonial.current{
-    background-position: top 0 left 73px;
-
-    width: 680px;
-    height: 450.49px;
-    padding: 82px 95px 0 77px;
-    margin: 0 60px;
-    transform: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#testimonials .quote {
-    padding: 5% 4% 5% 4%;
-}
-
-#testimonials .testimonial.current{
-    /*margin-left: 0;*/
-}
-
-#testimonials .person{
-    bottom: 46px;
-    left: 95px;
-    width: 60%;
-}
-}
 
 /* -- SEVENTH SECTION STARTS HERE -- */
 
