@@ -49,6 +49,8 @@ header{
     background: url(../images/logo.png);
     width: 46px;
     height: 32px;
+    position: relative;
+    z-index: 1000;
 }
 
 .list{
