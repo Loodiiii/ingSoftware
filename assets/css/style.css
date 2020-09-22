@@ -31,6 +31,18 @@ header{
     top: 0;
     background-color: #5ca7db;
     z-index: 50;
+    animation: fadeDown 0.7s;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .top-logo {
@@ -81,6 +93,24 @@ header{
     justify-content: space-between;
     flex-direction: column;
     cursor: pointer;
+}
+
+@keyframes height1{
+    from{
+        height: 40px;
+    }
+    to{
+        height: 1px;
+    }
+}
+
+@keyframes heightReverse {
+    from{
+        height: 1px;
+    }
+    to{
+        height: 40px;
+    }
 }
 
 .hamburger hr{
@@ -171,6 +201,8 @@ header{
     margin-top: -1px;
 }
 
+/* -- FIRST SECTION STARTS HERE -- */
+
 #s1{
    background-color: rgb(238, 244, 249);
    padding-bottom: 0;
@@ -189,6 +221,10 @@ header{
     font-weight: 400;
 }
 
+.s1-left{
+    animation: fadeUp 1.5s;
+}
+
 .s1-container p{
     margin: 20px 0;
     font-weight: 300;
@@ -198,6 +234,8 @@ header{
     background-color: #5ca7db;
     text-transform: uppercase;
     color: white;
+    font-size: 13px;
+
 }
 
 .s1-right{
@@ -215,24 +253,47 @@ header{
     left: 20%;
     top: 13%;
     z-index: 4;
+    animation: fadeUp 1.5s;
 }
 
 #stars{
     width: 250px;
     left: 13%;
     top: 8%;
+    animation: fadeIn 1s;
 }
 
 #clouds{
     top: 53%;
     width: 340px;
     left: 0;
+    animation: fadeIn 1s;
 }
 
 #cloud-horisontal{
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 /* -- SECOND SECTION STARTS HERE -- */
@@ -633,13 +694,13 @@ header{
     padding: 25px 0;
     transition: .5s;
 }
-
+/* 
 .pricing-div:hover{
     width: 270px;
     transition: .5s;
     padding: 50px 0;
     margin: 10px auto;
-}
+} */
 
 .pricing-div h3{
     text-align: center;

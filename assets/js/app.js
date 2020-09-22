@@ -1,5 +1,5 @@
 //Declaring variables
-const hamburger = document.querySelector('.hamburger')
+const hamburger = document.querySelector('.burger')
 const list = document.querySelector('.list')
 const cross = document.querySelector('.cross')
 let li = document.querySelectorAll('li')
@@ -10,18 +10,18 @@ const hr3 = document.querySelector('.hr-3')
 //Event Listeners
 
 hamburger.addEventListener('click', function () {
-    hr1.classList.toggle('hr-1-toggle')
-    hr2.classList.toggle('hr-2-toggle')
-    hr3.classList.toggle('hr-3-toggle')
-    list.classList.toggle('block')
+    hamburger.style.animation = "height1 1s"
+    setTimeout(function () {
+        hr1.classList.toggle('hr-1-toggle')
+        hr2.classList.toggle('hr-2-toggle')
+        hr3.classList.toggle('hr-3-toggle')
+        list.classList.toggle('block')
+        hamburger.style.animation = "none"
+    }, 1000)
 })
 
-list.addEventListener("click", function () {
-    hr1.classList.toggle('hr-1-toggle')
-    hr2.classList.toggle('hr-2-toggle')
-    hr3.classList.toggle('hr-3-toggle')
-    list.classList.toggle('block')
-})
+
+
 
 var dateYear = document.querySelector('#fullYear')
 var d = new Date();

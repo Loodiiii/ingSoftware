@@ -23,8 +23,8 @@
 
 .container-concept {
     background: url('../images/pattern1.png');
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -50,8 +50,8 @@
 }
 
 .slika {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -74,6 +74,7 @@
     display: flex;
     justify-content: flex-start;
     margin-top: 25px;
+    align-items: center;
 }
 
 .splide__list {
@@ -85,7 +86,6 @@
     word-spacing: 1mm;
     letter-spacing: .1mm;
     line-height: 1.8;
-    padding: 0 20px;
 }
 
 .customer-text {
@@ -95,7 +95,7 @@
 }
 
 .customer-text h1 {
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(77, 77, 77);
     margin: 0;
 }
@@ -104,7 +104,7 @@
     color: rgb(155, 155, 155);
     margin: 0;
     margin-top: 4px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .splide__pagination{
