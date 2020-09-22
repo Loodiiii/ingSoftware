@@ -118,3 +118,11 @@
 .splide__pagination__page{
     margin: 1px 5px !important;
 }
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (min-width: 550px) {
+    .splide__slide p{
+        font-size: 18px;
+    }
+}

@@ -594,7 +594,7 @@ header{
 }
 
 .s4-right-to-circle h3{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     text-transform: capitalize;
     text-align: center;
@@ -871,8 +871,8 @@ header{
 }
 
 .popular-photo{
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     border-radius: 5%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -897,6 +897,7 @@ header{
     width: 209px;
     height: 70px;
     margin-top: 6px;
+    margin-left: 6px;
 }
 
 .popular-div-right h3{
