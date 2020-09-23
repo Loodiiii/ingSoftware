@@ -70,27 +70,36 @@
 }
 
 @media screen and (min-width: 768px){
+    header{
+        padding: 20px;
+    }
     .hamburger{
         display: none;
     }
     .list{
         font-size: 1rem;
         padding: 0;
-        width: 80%;
         opacity: 1;
         position: relative;
         margin: 0;
         height: auto;
+        background-color: transparent;
+        width: auto;
     }
     .u-list{
         display: flex;
         padding-top: 0;
         align-items: center;
         justify-content: right;
+        list-style: none;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
     }
     .u-list li{
         margin-bottom: 0;
-        margin: 0 8px;
+        margin: 0 10px;
     }
     .s1-container p{
         margin: 25px 0;
@@ -104,8 +113,29 @@
     #clouds{
         left: 19%;
     }
+    .s2-down{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .icon-container{
-        width: 60%;
+        width: 40%;
+        margin: 30px auto;
+    }
+    .s4-divs{
+        flex-direction: row;
+        margin: 30px auto;
+    }
+    .s4-div{
+        flex-direction: column;
+    }
+    .s4-right-to-circle{
+        width: 95%;
+    }
+    .s4-left p{
+        margin: 0 auto;
+    }
+    .s4-right-to-circle h3{
+        margin: 15px auto;
     }
     .s7-right{
         display: flex;
