@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
             '1280': {
                 perPage: 2,
             },
+            '1024': {
+                perPage: 2,
+            },
             '640': {
                 perPage: 1,
             },
