@@ -5,10 +5,12 @@
     scroll-behavior: smooth;
 }
 
+html,
 body{
     overflow-x: hidden;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .btn{
@@ -27,11 +29,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #5ca7db;
     z-index: 50;
     animation: fadeDown 0.7s;
+    width: 100%;
 }
 
 @keyframes fadeDown{
@@ -208,7 +211,8 @@ header{
 #s1{
    background-color: rgb(238, 244, 249);
    padding-bottom: 0;
-   height: auto; 
+   height: auto;
+   margin-top: 80px;
 }
 
 .s1-container{
