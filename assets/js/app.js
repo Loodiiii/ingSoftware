@@ -10,29 +10,15 @@ const hr3 = document.querySelector('.hr-3')
 //Event Listeners
 
 hamburger.addEventListener('click', function () {
-    if (hr1.classList.contains("hr-1-toggle")) {
-        hr1.classList.remove('hr-1-toggle')
-        hr2.classList.remove('hr-2-toggle')
-        hr3.classList.remove('hr-3-toggle')
-        list.classList.remove('block')
-    }
-    else {
-        hamburger.style.animation = "height1 1s"
-        setTimeout(function () {
-            hr1.classList.add('hr-1-toggle')
-            hr2.classList.add('hr-2-toggle')
-            hr3.classList.add('hr-3-toggle')
-            list.classList.add('block')
-            hamburger.style.animation = "none"
-        }, 1000)
-    }
+    list.classList.toggle('block')
+    hamburger.classList.toggle('opened');
+    hamburger.setAttribute('aria-expanded', this.classList.contains('opened'))
 })
 
 list.addEventListener("click", function () {
-    hr1.classList.remove('hr-1-toggle')
-    hr2.classList.remove('hr-2-toggle')
-    hr3.classList.remove('hr-3-toggle')
     list.classList.remove('block')
+    hamburger.classList.toggle('opened');
+    hamburger.setAttribute('aria-expanded', this.classList.contains('opened'))
 })
 
 function validateEmail(emailField) {
@@ -43,6 +29,17 @@ function validateEmail(emailField) {
     }
     return true;
 }
+
+var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector("header").style.top = "0";
+    } else {
+        document.querySelector("header").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+})
 
 
 
