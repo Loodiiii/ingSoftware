@@ -65,9 +65,9 @@ header{
     margin: 0 auto;
     padding-left: 15%;
     z-index: 100;
-    margin-left: 100%;
     transition: .4s;
     opacity: 0;
+    margin-left: 100%;
 }
 
 .u-list{
@@ -237,7 +237,7 @@ header{
     text-transform: uppercase;
     color: white;
     font-size: 13px;
-
+    cursor: pointer;
 }
 
 .s1-right{
@@ -995,10 +995,10 @@ header{
 
 .footer-copyright{
     display: flex;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 20%;
+    width: 100%;
+    margin-top: 15px;
     align-items: center;
+    justify-content: center;
 }
 
 #fullYear{

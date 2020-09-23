@@ -10,13 +10,13 @@ const hr3 = document.querySelector('.hr-3')
 //Event Listeners
 
 hamburger.addEventListener('click', function () {
-    if(hr1.classList.contains("hr-1-toggle")){
+    if (hr1.classList.contains("hr-1-toggle")) {
         hr1.classList.remove('hr-1-toggle')
         hr2.classList.remove('hr-2-toggle')
         hr3.classList.remove('hr-3-toggle')
         list.classList.remove('block')
     }
-    else{
+    else {
         hamburger.style.animation = "height1 1s"
         setTimeout(function () {
             hr1.classList.add('hr-1-toggle')
@@ -28,13 +28,21 @@ hamburger.addEventListener('click', function () {
     }
 })
 
-list.addEventListener("click", function() {
+list.addEventListener("click", function () {
     hr1.classList.remove('hr-1-toggle')
     hr2.classList.remove('hr-2-toggle')
     hr3.classList.remove('hr-3-toggle')
     list.classList.remove('block')
 })
 
+function validateEmail(emailField) {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) {
+        alert('Invalid Email Address');
+        return false;
+    }
+    return true;
+}
 
 
 
