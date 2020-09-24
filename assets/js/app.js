@@ -1,22 +1,21 @@
 //Declaring variables
 const hamburger = document.querySelector('.hamburger')
 const list = document.querySelector('.list')
-const cross = document.querySelector('.cross')
-let li = document.querySelectorAll('li')
-const hr1 = document.querySelector('.hr-1')
-const hr2 = document.querySelector('.hr-2')
-const hr3 = document.querySelector('.hr-3')
+const uList = document.querySelector(".u-list")
+const rocket = document.querySelector("#rocket")
 
 //Event Listeners
 
 hamburger.addEventListener('click', function () {
     list.classList.toggle('block')
+
     hamburger.classList.toggle('opened');
     hamburger.setAttribute('aria-expanded', this.classList.contains('opened'))
 })
 
-list.addEventListener("click", function () {
+uList.addEventListener("click", function () {
     list.classList.remove('block')
+
     hamburger.classList.toggle('opened');
     hamburger.setAttribute('aria-expanded', this.classList.contains('opened'))
 })
@@ -39,6 +38,12 @@ window.addEventListener("scroll", function () {
         document.querySelector("header").style.top = "-80px";
     }
     prevScrollpos = currentScrollPos;
+})
+
+window.addEventListener("scroll", function () {
+    var value = window.scrollY
+
+    rocket.style.top = -value * 0.1 + "px"
 })
 
 
