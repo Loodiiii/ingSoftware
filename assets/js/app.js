@@ -20,16 +20,7 @@ uList.addEventListener("click", function () {
     hamburger.setAttribute('aria-expanded', this.classList.contains('opened'))
 })
 
-function validateEmail(emailField) {
-    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if (reg.test(emailField.value) == false) {
-        alert('Invalid Email Address');
-        return false;
-    }
-    return true;
-}
-
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset
 window.addEventListener("scroll", function () {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
@@ -40,16 +31,21 @@ window.addEventListener("scroll", function () {
     prevScrollpos = currentScrollPos;
 })
 
-window.addEventListener("scroll", function () {
-    var value = window.scrollY
-
-    rocket.style.top = -value * 0.1 + "px"
-})
-
-
-
-var dateYear = document.querySelector('#fullYear')
+dateYear = document.querySelector('#fullYear')
 var d = new Date();
 dateYear.innerHTML = d.getFullYear();
+    
 
+// function validateEmail(emailField) {
+//     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+//     if (reg.test(emailField.value) == false) {
+//         alert('Invalid Email Address');
+//         return false;
+//     }
+//     return true;
+// }
 
+//window.addEventListener("scroll", function () {
+//   var value = window.scrollY  
+//   rocket.style.top = -value * 0.1 + "px"
+// })

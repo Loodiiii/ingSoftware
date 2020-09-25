@@ -18,6 +18,7 @@ body{
     --blue: #5ca7db;
     --black: #404040;
     --yellow: #f5c463;
+    --black-p: rgba(25,25,25,0.5)
 }
 
 .btn{
@@ -280,9 +281,10 @@ header{
 
 .s2-up p{
     margin-bottom: 15px;
-    color: var(--black);
+    color: var(--black-p);
     font-size: 1rem;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .s2-up h1{
@@ -388,7 +390,8 @@ header{
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
-    color: var(--black);
+    color: var(--black-p);
+    font-weight: 600;
 }
 
 .s3-right h1{
@@ -425,10 +428,12 @@ header{
 
 .s3-paragraphs .s3-tick-and-p p{
     text-align: left;
+    color: var(--black);
     display: inline-block;
     line-height: 2;
     margin-left: 8px;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .s3-left{
@@ -452,11 +457,12 @@ header{
 }
 
 .s4-left p{
-    color: var(--black);
+    color: var(--black-p);
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     margin: 15px 0;
+    font-weight: 600;
 }
 
 .s4-left h1{
@@ -562,6 +568,7 @@ header{
 .s4-right-to-circle p{
     font-size: .6rem;
     text-align: center;
+    color: var(--black);
 }
 
 .s4-right{
@@ -621,7 +628,12 @@ header{
 .s7-left p{
     text-align: left;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 600;
+    color: var(--black-p);
+}
+#s7-left-p{
+    color: var(--black);
+    font-weight: 400;
 }
 
 #pricing{
@@ -716,7 +728,8 @@ header{
 .s8-right p{
     text-align: center;
     font-size: 1rem;
-    color: var(--black);
+    color: var(--black-p);
+    font-weight: 600;
     text-transform: uppercase;
     margin: 15px 0;
 }
@@ -729,6 +742,8 @@ header{
 
 #s8-p2{
     text-align: left;
+    color: var(--black);
+    font-weight: 400;
 }
 
 .s8-btn{
@@ -751,7 +766,8 @@ header{
 
 .s9-container p{
     text-align: center;
-    color: var(--black);
+    color: var(--black-p);
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 1rem;
 }
@@ -767,7 +783,7 @@ header{
     padding: 15px 20px;
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px auto;
     display: block;
     outline: none;
@@ -948,7 +964,7 @@ header{
 .footer-copyright{
     display: flex;
     width: 100%;
-    margin-top: 15px;
+    margin: 15px auto;
     align-items: center;
     justify-content: center;
 }
