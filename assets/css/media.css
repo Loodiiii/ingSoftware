@@ -379,6 +379,9 @@
     .pricing-div{
         margin: 0;
     }
+    .choose-plan{
+        font-size: .8rem;
+    }
     .pricing-div:hover{
         width: 270px;
         transition: .5s;
@@ -417,5 +420,33 @@
     }
     .s10-container{
         display: flex;
+        justify-content: space-between;
     }
+    .s10-2:first-child{
+        width: 65%;
+    }
+    .s10-2:last-child{
+        width: 50%;
+    }
+    .popular-photo{
+        background-size: 100% 100%;
+        width: 75px;
+        height: 75px;
+    }
+    .s10-4:first-child{
+        width: 50%;
+    }
+    .popular-div-right h3{
+        font-size: 18px;
+    }
+    .elsewhere-links{
+        margin: 30px 5px;
+    }
+    .get-in-touch-p{
+        margin: 20px 5px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    
 }

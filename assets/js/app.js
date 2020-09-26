@@ -56,7 +56,6 @@ window.addEventListener('load', () => {
         const s1Right = document.querySelector(".s1-right")
         s1Right.classList.add("fadeUp")
     }, 2000);
-
 });
 
 hamburger.addEventListener('click', function () {
@@ -71,8 +70,6 @@ window.addEventListener("scroll", function () {
     headerScroll();
     appearOnScroll();
 })
-
-
 
 
 dateYear = document.querySelector('#fullYear')
