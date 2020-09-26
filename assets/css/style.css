@@ -39,24 +39,18 @@ header{
     padding-left: 20px;
     padding-right: 5px;
     position: fixed;
-    top: 0;
+    top: -80px;
+    opacity: 1;
     background-color: transparent;
     z-index: 50;
-    animation: fadeDown 0.7s;
     width: 100%;
-    transition: .5s;
+    transition: all .7s;
 }
 
-@keyframes fadeDown{
-    from{
-        opacity: 0;
-        transform: translateY(-30%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
+.header-appear{
+    top: 0;
 }
+
 
 .top-logo {
     background: url(../images/logo.png);
@@ -64,6 +58,10 @@ header{
     height: 32px;
     position: relative;
     z-index: 1000;
+}
+
+.top-logo:focus{
+    outline: none;
 }
 
 .list{
@@ -160,13 +158,16 @@ header{
     display: none;
 }
 
-/* -- FIRST SECTION STARTS HERE -- */
+/*  -----------------------
+    FIRST SECTION STARTS HERE
+    ----------------------- */
 
 #s1{
    background-color: rgb(238, 244, 249);
    padding-bottom: 0;
    height: auto;
    padding-top: 70px;
+   overflow: hidden;
 }
 
 .s1-container{
@@ -181,8 +182,19 @@ header{
     font-weight: 400;
 }
 
-.s1-left{
+.s1-right{
     animation: fadeUp 1.5s;
+}
+
+.s1-left{
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 1s .5s;
+}
+
+.fadeLeft{
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 .s1-container p{
@@ -203,6 +215,9 @@ header{
 .s1-right{
     position: relative;
     height: 550px;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 1s all ease .5s;
 }
 
 .s1-right img{
@@ -211,25 +226,33 @@ header{
     position: absolute;
 }
 
-#rocket{
+.rocket{
     left: 20%;
     top: 13%;
     z-index: 4;
-    animation: fadeUp 1.5s;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s ease .5s;
 }
 
 #stars{
     width: 250px;
     left: 13%;
     top: 8%;
-    animation: fadeIn 1s;
 }
 
 #clouds{
     top: 53%;
     width: 340px;
     left: 0;
-    animation: fadeIn 1s;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s ease-in .5s;
+}
+
+.fadeUp{
+    opacity: 1 !important;
+    transform: translateY(0%);
 }
 
 #cloud-horisontal{
@@ -238,27 +261,9 @@ header{
     margin: 0;
 }
 
-@keyframes fadeUp{
-    from{
-        opacity: 0;
-        transform: translateY(20%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-/* -- SECOND SECTION STARTS HERE -- */
+/*  --------------------------
+    SECOND SECTION STARTS HERE
+    -------------------------- */
 
 #s2{
     height: auto;
@@ -374,7 +379,9 @@ header{
     margin-top: 46px;
 }
 
-/* -- THIRD SECTION STARTS HERE -- */
+/*  -------------------------
+    THIRD SECTION STARTS HERE
+    ------------------------- */
 
 #s3{
     height: auto;
@@ -446,7 +453,9 @@ header{
     margin: 25px 0;
 }
 
-/* -- FOURTH SECTION STARTS HERE -- */
+/*  --------------------------
+    FOURTH SECTION STARTS HERE
+    -------------------------- */
 
 #s4{
     height: auto;
@@ -581,7 +590,9 @@ header{
     margin-left: 3%;
 }
 
-/* -- FIFTH SECTION STARTS HERE -- */
+/*  -------------------------
+    FIFTH SECTION STARTS HERE
+    ------------------------- */
 
 #s5{
     height: auto;
@@ -594,10 +605,13 @@ header{
     padding-top: 40px;
 }
 
-/* -- SIXTH SECTION IN ANOTHER CSS FILE, TESTIMONIAL.CSS -- */
+/*  --------------------------------------------------
+    SIXTH SECTION IN ANOTHER CSS FILE, TESTIMONIAL.CSS
+    -------------------------------------------------- */
 
-
-/* -- SEVENTH SECTION STARTS HERE -- */
+/*  ---------------------------
+    SEVENTH SECTION STARTS HERE
+    --------------------------- */
 
 #s7{
     height: auto;
@@ -699,7 +713,9 @@ header{
     text-transform: lowercase;
 }
 
-/* -- EIGHT SECTION STARTS HERE -- */
+/*  -------------------------
+    EIGHT SECTION STARTS HERE
+    ------------------------- */
 
 #s8{
     height: auto;
@@ -751,7 +767,9 @@ header{
     display: block;
 }
 
-/* -- NINTH SECTION STARTS HERE -- */
+/*  -------------------------
+    NINTH SECTION STARTS HERE
+    ------------------------- */
 
 #s9{
     height: auto;
@@ -806,7 +824,9 @@ header{
     background-color: rgb(238, 244, 249);
 }
 
-/* -- TENTH SECTION/FOOTER STARTS HERE -- */
+/*  --------------------------
+    FOOTER SECTION STARTS HERE
+    -------------------------- */
 
 #s10{
     height: auto;
@@ -973,4 +993,133 @@ header{
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.8);
     margin: 0 6px;
+}
+
+
+/*  -----------------------
+    PRELOADE SECTION STARTS HERE
+    ----------------------- */
+
+.preload{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, #53ddfa 100%);
+    z-index: 100000000000000;
+    opacity: 1;
+}
+.pre-rocket{
+    width: 210px;
+    height: auto;
+    position: relative;
+    top: 0;
+    animation: preRocket 1.6s infinite ease-in-out;
+}
+@keyframes preRocket{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.pre-stars{
+    width: 450px;
+    position: absolute;
+    top: 25%;
+    z-index: -1;
+}
+.pre-cloud{
+    position: absolute;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.9);
+    top: 0px;
+    transform: translateY(-100%);
+}
+.pre-cloud1{
+    left: 10%;
+    animation: preClouds 1.5s infinite ease-in;
+    transform: rotate(2deg) translateY(-100%);
+}
+
+.pre-cloud2{
+    animation: preClouds 1.5s infinite ease-in 1s;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.8);
+}
+.pre-cloud3{
+    right: 14%;
+    animation: preClouds 1.5s infinite ease-in .5s;
+    transform: rotate(-9deg) translateY(-100%);
+}
+@keyframes preClouds{
+    from{
+        top: 0%;
+    }
+    to{
+        top: 120%;
+    }
+}
+.moon{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    transform: rotate(19deg);
+    font-size: 200px;
+    color: #ddd458;
+}
+.stars1{
+    top: 8%;
+}
+.stars2{
+    left: -1%;
+    top: 25%;
+    transform: rotate(50deg);
+}
+.stars3{
+    right: -1%;
+    transform: rotate(270deg);
+    top: 26%;
+}
+.stars4{
+    transform: rotate(-55deg);
+    top: 47%;
+    right: 8%;
+}
+
+.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 425px){
+    .moon{
+        font-size: 100px;
+    }
+    .pre-cloud{
+        font-size: 70px;
+    }
+    .pre-stars{
+        width: 400px;
+    }
+    .stars4{
+        display: none;
+    }
+    .stars3{
+        transform: rotate(210deg);
+        top: 67%;
+        right: 0;
+    }
+    .stars2{
+        left: 6%;
+        top: 45%;
+        transform: rotate(-48px);
+    }
 }

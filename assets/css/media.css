@@ -1,5 +1,5 @@
 @media screen and (max-width: 338px) {
-    #rocket{
+    .rocket{
         left: 17%;
     }
     #stars{
@@ -23,7 +23,7 @@
 }
 
 @media screen and (min-width: 425px) {
-    #rocket{
+    .rocket{
         left: 26%;
     }
     #stars{
@@ -35,7 +35,7 @@
     .s1-right img{
         width: 225px;
     }
-    #rocket{
+    .rocket{
         left: 28%;
         top: 5%;
     }
@@ -104,7 +104,7 @@
     .s1-container p{
         margin: 25px 0;
     }
-    #rocket{
+    .rocket{
         left: 33%;
     }
     #stars{
@@ -206,7 +206,7 @@
         font-size: 1.2rem;
         word-spacing: 0.1mm;
     }
-    #rocket{
+    .rocket{
         top: 10%;
     }
     #stars{
