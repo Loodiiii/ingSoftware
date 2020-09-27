@@ -32,14 +32,13 @@ function headerScroll() {
     prevScrollpos = currentScrollPos;
 }
 
+function appearOnScroll(e, clas) {
+    var elementFadeLeft = document.querySelector(e)
+    var elementFadeLeftPosition = elementFadeLeft.getBoundingClientRect().top
+    var screenFadeLeftPosition = window.innerHeight / 1.3
 
-function appearOnScroll() {
-    var element = document.querySelector(".element")
-    var elementPosition = element.getBoundingClientRect().top
-    var screenPosition = window.innerHeight / 1.3
-
-    if (elementPosition < screenPosition) {
-        element.classList.add("elementScrolled")
+    if (elementFadeLeftPosition < screenFadeLeftPosition) {
+        elementFadeLeft.classList.add(clas)
     }
 }
 
@@ -58,6 +57,8 @@ window.addEventListener('load', () => {
     }, 2000);
 });
 
+
+
 hamburger.addEventListener('click', function () {
     listAppear();
 })
@@ -66,9 +67,12 @@ uList.addEventListener("click", function () {
     listDisappear();
 })
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
     headerScroll();
-    appearOnScroll();
+    appearOnScroll(".icon-container1", "fadeJS-active");
+    appearOnScroll(".icon-container2", "fadeJS-active");
+    appearOnScroll(".icon-container3", "fadeJS-active");
+    appearOnScroll(".icon-container4", "fadeJS-active");
 })
 
 

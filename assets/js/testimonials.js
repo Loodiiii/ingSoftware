@@ -6,10 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         perMove: 1,
         focus: 'center',
         breakpoints: {
-            '1280': {
-                perPage: 2,
-            },
-            '1024': {
+            '1366': {
                 perPage: 2,
             },
             '640': {

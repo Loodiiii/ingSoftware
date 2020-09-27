@@ -1,15 +1,33 @@
+@font-face {
+    font-family: "Open-Sans-Light";
+    src: url("../font/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: "Open-Sans-Regular";
+    src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Open-Sans-Bold";
+    src: url("../font/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Open-Sans-SemiBold";
+    src: url("../font/OpenSans-SemiBold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html,
 body{
     overflow-x: hidden;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     color: var(--black);
 }
@@ -61,8 +79,9 @@ header{
     z-index: 1000;
 }
 
-.top-logo:focus{
+.menu:focus{
     outline: none;
+    border: none;
 }
 
 .list{
@@ -197,6 +216,7 @@ header{
     opacity: 1;
     transform: translateX(0%);
 }
+
 
 .s1-container p{
     margin: 20px 0;
@@ -378,6 +398,30 @@ header{
     background: url(../images/to-do-list.png);
     margin-left: 49px;
     margin-top: 46px;
+}
+
+.icon-container1{
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 1s all;
+}
+
+.icon-container2{
+    transform: translateX(20%);
+    opacity: 0;
+    transition: 1s all;
+}
+
+.icon-container3{
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 1s all;
+}
+
+.icon-container4{
+    transform: translateX(20%);
+    opacity: 0;
+    transition: 1s all;
 }
 
 /*  -------------------------
@@ -995,6 +1039,15 @@ header{
     margin: 0 6px;
 }
 
+/*  --------------------
+    JS CLASSES ANIMATION
+    -------------------- */
+
+.fadeJS-active{
+    opacity: 1;
+    transform: translateX(0%) translateY(0%);
+    transition: all 1s;
+}
 
 /*  -----------------------
     PRELOADE SECTION STARTS HERE
