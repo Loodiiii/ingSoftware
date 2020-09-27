@@ -303,6 +303,13 @@ header{
 
 .s2-up{
     text-align: center;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all 1s;
+}
+.s2-up-active{
+    transform: scaleY(1);
+    opacity: 1;
 }
 
 .s2-up p{
@@ -438,6 +445,17 @@ header{
     padding: 20px;
 }
 
+.s3-right-texts{
+    transform: translateY(10%);
+    transition: 1s all ease-in;
+    opacity: 0;
+}
+
+.s3-right-texts-active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
 .s3-right p{
     text-align: center;
     text-transform: uppercase;
@@ -463,10 +481,39 @@ header{
     margin: 0 auto;
 }
 
-.s3-tick-and-p {
+.s3-tick-and-p{
     display: flex;
     align-items: center;
     margin: 10px auto;
+}
+
+.s3-tick-and-p1 {
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s3-tick-and-p2 {
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s3-tick-and-p3 {
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s3-tick-and-p4 {
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s3-tick-and-p-active{
+    opacity: 1;
+    transform: skewX(0) translateX(0);
 }
 
 .tick{
@@ -489,7 +536,14 @@ header{
 }
 
 .s3-left{
-    width: 100%;
+    transform: scale(0, 1);
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
+.s3-left-active{
+    transform: scale(1, 1);
+    opacity: 1;
 }
 
 #s3-left-photo{
@@ -508,6 +562,17 @@ header{
 
 .s4-container{
     padding: 25px 20px;
+}
+
+.s4-left{
+    transform: translateX(-20%);
+    transition: 1s all ease-in;
+    opacity: 0;
+}
+
+.s4-left-active{
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .s4-left p{
@@ -627,6 +692,14 @@ header{
 
 .s4-right{
     width: 100%;
+    opacity: 0;
+    transform: scale(0, 1);
+    transition: 1s all ease-in;
+}
+
+.s4-right-active{
+    transform: scale(1, 1);
+    opacity: 1;
 }
 
 .s4-right img{
@@ -650,6 +723,57 @@ header{
     padding-top: 40px;
 }
 
+.s3-left-2{
+    transform: scale(0, 1);
+    transition: ease-in 1s all;
+    opacity: 0;
+}
+
+.s3-left-2-active{
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.s5-right-texts-2{
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.s5-right-texts-2-active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.s5-tick-and-p1{
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s5-tick-and-p2{
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s5-tick-and-p3{
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s5-tick-and-p4{
+    opacity: 0;
+    transition: .5s all ease;
+    transform: skewX(-30deg) translateX(100px);
+}
+
+.s5-tick-and-p-active{
+    opacity: 1;
+    transform: skewX(0deg) translateX(0);
+}
+
 /*  --------------------------------------------------
     SIXTH SECTION IN ANOTHER CSS FILE, TESTIMONIAL.CSS
     -------------------------------------------------- */
@@ -669,6 +793,14 @@ header{
 
 .s7-left{
     padding: 20px;
+    transform: translateX(-20%);
+    transition: 1s all ease-in;
+    opacity: 0;
+}
+
+.s7-left-active{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .s7-container p{
@@ -702,6 +834,14 @@ header{
 
 .s7-right{
     padding: 20px;
+    transform: translateX(20%);
+    transition: 1s all ease-in;
+    opacity: 0;
+}
+
+.s7-right-active{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .pricing-1{
@@ -780,10 +920,26 @@ header{
 
 .s8-left{
     padding: 20px 0;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 1s all ease-in;
+}
+
+.s8-left-active{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .s8-right{
     width: 100%;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: 1s all ease-in;
+}
+
+.s8-right-active{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .s8-right p{
@@ -792,6 +948,7 @@ header{
     color: var(--black-p);
     font-weight: 600;
     margin: 15px 0;
+    text-transform: uppercase;
 }
 
 .s8-right h1{
@@ -804,6 +961,7 @@ header{
     text-align: left;
     color: var(--black);
     font-weight: 400;
+    text-transform: none;
 }
 
 .s8-btn{
@@ -824,6 +982,14 @@ header{
     width: 100%;
     background-color: rgb(238, 244, 249);
     padding: 20px;
+    transform: translateY(20%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.s9-container-active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .s9-container p{
@@ -886,7 +1052,6 @@ header{
 .s10-2{
     width: 100%;
     height: auto;
-
 }
 
 .s10-4{
@@ -1025,6 +1190,54 @@ header{
     display: block;
 }
 
+.s10-popular{
+    transform: translateX(-20%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.s10-popular-active{
+    transform: translateX(0%);
+    transition: 1s all ease-in;
+    opacity: 1;
+}
+
+.s10-buttons{
+    transform: translateX(20%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.s10-buttons-active{
+    transform: translateX(0%);
+    transition: 1s all ease-in;
+    opacity: 1;
+}
+
+.s10-getInTouch{
+    transform: translateX(-20%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.s10-getInTouch-active{
+    transform: translateX(0%);
+    transition: 1s all ease-in;
+    opacity: 1;
+}
+
+.s10-learnMore{
+    transform: translateX(20%);
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.s10-learnMore-active{
+    transform: translateX(0%);
+    transition: 1s all ease-in;
+    opacity: 1;
+}
+
 .footer-copyright{
     display: flex;
     width: 100%;
@@ -1046,7 +1259,7 @@ header{
 .fadeJS-active{
     opacity: 1;
     transform: translateX(0%) translateY(0%);
-    transition: all 1s;
+    transition: all 1s ease-in;
 }
 
 /*  -----------------------
@@ -1057,7 +1270,8 @@ header{
     width: 100%;
     height: 100vh;
     position: fixed;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, #53ddfa 100%);

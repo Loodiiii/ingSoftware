@@ -73,8 +73,31 @@ window.addEventListener("scroll", () => {
     appearOnScroll(".icon-container2", "fadeJS-active");
     appearOnScroll(".icon-container3", "fadeJS-active");
     appearOnScroll(".icon-container4", "fadeJS-active");
+    appearOnScroll(".s2-up", "s2-up-active");
+    appearOnScroll(".s3-right-texts", "s3-right-texts-active");
+    appearOnScroll(".s3-left", "s3-left-active");
+    appearOnScroll(".s3-tick-and-p1", "s3-tick-and-p-active");
+    appearOnScroll(".s3-tick-and-p2", "s3-tick-and-p-active");
+    appearOnScroll(".s3-tick-and-p3", "s3-tick-and-p-active");
+    appearOnScroll(".s3-tick-and-p4", "s3-tick-and-p-active");
+    appearOnScroll(".s4-right", "s4-right-active");
+    appearOnScroll(".s4-left", "s4-left-active");
+    appearOnScroll(".s3-left-2", "s3-left-2-active");
+    appearOnScroll(".s5-right-texts-2", "s5-right-texts-2-active");
+    appearOnScroll(".s5-tick-and-p1", "s5-tick-and-p-active");
+    appearOnScroll(".s5-tick-and-p2", "s5-tick-and-p-active");
+    appearOnScroll(".s5-tick-and-p3", "s5-tick-and-p-active");
+    appearOnScroll(".s5-tick-and-p4", "s5-tick-and-p-active");
+    appearOnScroll(".s7-left", "s7-left-active");
+    appearOnScroll(".s7-right", "s7-right-active");
+    appearOnScroll(".s8-left", "s8-left-active");
+    appearOnScroll(".s8-right", "s8-right-active");
+    appearOnScroll(".s9-container", "s9-container-active");
+    appearOnScroll(".s10-popular", "s10-popular-active");
+    appearOnScroll(".s10-buttons", "s10-buttons-active");
+    appearOnScroll(".s10-learnMore", "s10-learnMore-active");
+    appearOnScroll(".s10-getInTouch", "s10-getInTouch-active");
 })
-
 
 dateYear = document.querySelector('#fullYear')
 var d = new Date();
