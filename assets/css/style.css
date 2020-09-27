@@ -246,7 +246,7 @@ header{
     top: 53%;
     width: 340px;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20%);
     transition: all 1s ease-in .5s;
 }
@@ -747,7 +747,6 @@ header{
     font-size: 1rem;
     color: var(--black-p);
     font-weight: 600;
-    text-transform: uppercase;
     margin: 15px 0;
 }
 
