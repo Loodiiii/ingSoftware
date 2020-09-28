@@ -1279,6 +1279,7 @@ header{
     position: relative;
     top: 0;
     animation: preRocket 1.6s infinite ease-in-out;
+    z-index: 10;
 }
 @keyframes preRocket{
     0%{
@@ -1295,7 +1296,7 @@ header{
     width: 450px;
     position: absolute;
     top: 25%;
-    z-index: -1;
+    z-index: -5;
 }
 .pre-cloud{
     position: absolute;
@@ -1303,6 +1304,7 @@ header{
     color: rgba(255, 255, 255, 0.9);
     top: 0px;
     transform: translateY(-100%);
+    z-index: -3;
 }
 .pre-cloud1{
     left: 10%;
@@ -1335,6 +1337,7 @@ header{
     transform: rotate(19deg);
     font-size: 200px;
     color: #ddd458;
+    z-index: 1;
 }
 .stars1{
     top: 8%;
@@ -1359,6 +1362,24 @@ header{
     opacity: 0;
     pointer-events: none;
     transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .moon{
+        font-size: 150px;
+    }
+    .pre-cloud{
+        font-size: 110px;
+    }
+    .stars3{
+        right: -14%;
+        top: 30%;
+    }
+    .pre-rocket{
+        width: 170px;
+    }
+
+
 }
 
 @media screen and (max-width: 425px){
