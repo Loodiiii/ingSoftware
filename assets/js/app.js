@@ -47,7 +47,7 @@ function appearOnScroll(e, clas) {
 window.addEventListener('load', () => {
     const preload = document.querySelector(".preload")
     setTimeout(function () {
-
+        preload.classList.add("fadeOut")
         header.classList.add("header-appear")
         const s1Left = document.querySelector(".s1-left")
         s1Left.classList.add("fadeLeft")
