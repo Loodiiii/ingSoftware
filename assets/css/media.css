@@ -31,6 +31,31 @@
     }
 }
 
+@media screen and (max-width: 425px){
+    .moon{
+        font-size: 100px;
+    }
+    .pre-cloud{
+        font-size: 70px;
+    }
+    .pre-stars{
+        width: 400px;
+    }
+    .stars4{
+        display: none;
+    }
+    .stars3{
+        transform: rotate(210deg);
+        top: 67%;
+        right: 0;
+    }
+    .stars2{
+        left: 6%;
+        top: 45%;
+        transform: rotate(-48px);
+    }
+}
+
 @media screen and (min-width: 550px) {
     .s1-right img{
         width: 225px;
@@ -388,9 +413,8 @@
         font-size: .8rem;
     }
     .pricing-div:hover{
-        width: 270px;
+        transform: scale(1.1);
         transition: .5s;
-        padding: 40px 0;
     }
     .s8-container{
         flex-direction: row;
@@ -546,9 +570,75 @@
         left: 31%;
     }
     .s2-container{
+        width: 70%;
         padding: 0;
     }
     .icon-container p{
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .s1-container{
+        width: 60%;
+    }
+    header{
+        padding: 20px 470px 20px 340px;
+    }
+    .rocket{
+        left: 29%;
+    }
+    .s1-left{
+        width: 40%;
+    }
+    .s2-down{
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .icon-container{
+        width: 22%;
+    }
+    .s3-container{
+        width: 74%;
+    }
+    .s4-container{
+        width: 74%;
+    }
+    .s4-left{
+        width: 35%;
+    }
+    .s5-container{
+        width: 74%;
+    }
+    .s8-container{
+        width: 74%;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .s3-container{
+        width: 68%;
+    }
+    .s4-container{
+        width: 68%;
+    }
+    .s4-left{
+        width: 35%;
+    }
+    .s5-container{
+        width: 68%;
+    }
+    .s7-container{
+        width: 65%;
+    }
+    .s7-left{
+        padding: 0;
+    }
+    .s8-container{
+        width: 68%;
+    }
+    .s10-container{
+        width: 63%;
     }
 }

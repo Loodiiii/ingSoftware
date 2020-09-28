@@ -864,7 +864,7 @@ header{
     margin: 0 auto;
     background-color: white;
     padding: 25px 0;
-    transition: .5s;
+    transition: .2s;
 }
 
 .pricing-div h3{
@@ -904,6 +904,7 @@ header{
 
 #s8{
     height: auto;
+    background-color: #f9fafb;
 }
 
 .s8-container{
@@ -975,6 +976,7 @@ header{
 
 #s9{
     height: auto;
+    background-color: rgb(238, 244, 249);
 }
 
 .s9-container{
@@ -1040,6 +1042,8 @@ header{
 
 #s10{
     height: auto;
+    background-color: #fff;
+    margin-top: -5px;
 }
 
 .s10-container{
@@ -1270,8 +1274,7 @@ header{
     width: 100%;
     height: 100vh;
     position: fixed;
-    /* display: flex; */
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, #53ddfa 100%);
@@ -1308,6 +1311,7 @@ header{
     color: rgba(255, 255, 255, 0.9);
     top: 0px;
     transform: translateY(-100%);
+    z-index: -1;
 }
 .pre-cloud1{
     left: 10%;
@@ -1317,7 +1321,6 @@ header{
 
 .pre-cloud2{
     animation: preClouds 1.5s infinite ease-in 1s;
-    z-index: -1;
     color: rgba(255, 255, 255, 0.8);
 }
 .pre-cloud3{
