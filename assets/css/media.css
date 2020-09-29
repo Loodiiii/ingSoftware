@@ -391,7 +391,6 @@
         transform: scale(1.1);
         transition: .5s;
     }
-    }
     .s8-container{
         flex-direction: row;
         justify-content: space-between;
